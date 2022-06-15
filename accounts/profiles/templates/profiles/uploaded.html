@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+<h1>Uploaded Files</h1>
+{% block content %}
+<div>
+    {% if files %}
+    {% for file in files %}
+    <h2>{{ file.file_name }}</h2>
+  {% endfor %}
+  
+    {% endif %}
+</div>
+{% endblock %}
